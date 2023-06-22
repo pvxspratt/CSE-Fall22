@@ -1,0 +1,19 @@
+// ***************************************
+// LAB0: Part 3 - Read Command Line Args - Phoebe Spratt(phospra)
+// CREATED: 08/26/2022
+// **********************************
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (int argc, char* argv[]) {
+
+    if (argc != 2) {
+        printf("Error: Incorrect number of arguments\n");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("The argument is %s\n", argv[1]);
+    exit(EXIT_SUCCESS);
+}
+
